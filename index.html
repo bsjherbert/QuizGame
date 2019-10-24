@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Quiz Game</title>
+</head>
+
+<header class="p-4">
+    <a href="viewHighScores.html" style="text-decoration:none">View Highscores</a>
+    <div class="float-right">Time: 0
+    </div>
+</header>
+
+<body>
+    <div class="startGame">
+        <div class="row mx-auto m-4">
+            <div class="col-md-5 col-md-offset-5 mx-auto text-center m-4">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                    answers will penalize your score/time by ten seconds!</p>
+                <div class="buttons p-4">
+                    <button type="startQuiz" class="btn-generate btn-primary rounded-lg" onClick="userPrompt()">Start
+                        Quiz
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="question1 d-none">
+        <div class="row mx-auto m-4">
+            <div class="col-md-6 col-md-offset-5 mx-auto m-4">
+                <h2>The condition in an if/else statement is enclosed within _____.</h2>
+                <ul class="pl-0 pt-4">
+                    <li class="btn-group-vertical">
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">1. quotes
+
+                        </button>
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">2. curly brackets
+
+
+                        </button>
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">3. parentheses
+
+                        </button>
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">4. square brackets
+
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="question2 d-none">
+        <div class="row mx-auto m-4">
+            <div class="col-md-6 col-md-offset-5 mx-auto m-4">
+                <h2>Arrays in JavaScript can be used to store _____.</h2>
+                <ul class="pl-0 pt-4">
+                    <li class="btn-group-vertical">
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">1. numbers and strings
+
+                        </button>
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">2. other arrays
+
+
+                        </button>
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">3. booleans
+
+                        </button>
+                        <button type="startQuiz" class="btn-generate btn-primary rounded-lg mb-2"
+                            onClick="userPrompt()">4. all of the above
+
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="allDone d-none">
+        <div class="row mx-auto m-4">
+            <div class="col-md-6 col-md-offset-5 mx-auto m-4">
+                <h3><strong>All done!</strong></h3>
+                <p>Your final score is 70.</p>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label p-0 ml-3 mt-1">Enter initials:</label>
+                        <div class="col-sm-8 m-0">
+                            <input type="initials" class="form-control " id="inputInitials">
+                        </div>
+                </form>
+                <button type="startQuiz" class="btn-generate btn-primary rounded-lg m-0 mx-auto"
+                    onClick="userPrompt()">Submit
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="Highscores d-none">
+        <div class="row mx-auto m-4">
+            <div class="col-md-6 col-md-offset-5 mx-auto m-4">
+                <h3><strong>Highscores</strong></h3>
+                <p>1. Brad is the best!!! -70</p>
+                <button type="startQuiz" class="btn-generate btn-primary rounded-lg m-0 mx-auto"
+                    onClick="userPrompt()">Go Back
+                </button>
+                <button type="startQuiz" class="btn-generate btn-primary rounded-lg m-0 mx-auto"
+                    onClick="userPrompt()">Clear Highscores
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
