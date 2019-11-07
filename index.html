@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="quiz.css">
     <title>Quiz Game</title>
 </head>
 
@@ -20,26 +20,33 @@
 </header>
 
 <body>
-    <div class="startGame">
+    <div id="startQuiz">
         <div class="row mx-auto m-4">
-            <div id = "questions" class="col-md-5 col-md-offset-5 mx-auto text-center m-4">
-                <h1 id="hideH1">Coding Quiz Challenge</h1>
-                <p id="hideP">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+            <div id="startContainer" class="col-md-5 col-md-offset-5 mx-auto text-center m-4">
+                <h1 id="quizName">Coding Quiz Challenge</h1>
+                <p id="quizRules">Try to answer the following code-related questions within the time limit. Keep in mind
+                    that incorrect
                     answers will penalize your score/time by ten seconds!</p>
-                <div class="buttons p-4">
-                    <button id = "startButton" type="startQuiz" class="btn-generate btn-primary rounded-lg">Start
+                <div class="quizStart p-4">
+                    <button id="startButton" type="startQuiz" class="btn-generate btn-primary rounded-lg">Start
                         Quiz
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    
+    <div id="qandaContainer">
+        <div id="question"></div>
+        <div id="answers">
 
-
-
-
-
+        </div>
+        <div id="correctChoice"></div>
+    </div>
+    <div id="allDoneContainer">
+        <div id="finalScore"></div>
+        <div id="playerInitials"></div>
+        <div id="highScore"></div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="questions.js"></script>
